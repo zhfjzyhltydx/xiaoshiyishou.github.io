@@ -3,57 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>看什么看啊</title>
+    <title>你确定要看吗？</title>
     <style>
+        /* 全局样式 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Creepster', Arial, sans-serif; /* 使用恐怖字体 */
             margin: 0;
             padding: 0;
             font-size: 20px;
             line-height: 1.8;
+            color: #f2f2f2; /* 白色文字 */
+            background: #000; /* 黑色背景 */
+            background-image: url('https://example.com/scary-forest.jpg'); /* 替换为恐怖背景图 */
+            background-size: cover;
+            background-attachment: fixed;
         }
+        
+        /* 闪烁效果 */
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
         header {
-            background-color: #4CAF50;
-            color: white;
+            background: linear-gradient(135deg, #ff0000, #800000); /* 血红渐变背景 */
+            color: #fff;
             text-align: center;
             padding: 30px;
             font-size: 36px;
+            text-shadow: 2px 2px 10px black;
+            animation: flicker 1s infinite; /* 添加闪烁效果 */
         }
         header h2 {
             font-size: 28px;
+            text-shadow: 1px 1px 5px black;
         }
+
         main {
             text-align: center;
             padding: 40px;
             font-size: 24px;
+            background: rgba(0, 0, 0, 0.8); /* 半透明背景 */
+            border: 1px solid #f00;
+            box-shadow: 0 0 20px red;
+            margin: 20px;
+            border-radius: 10px;
         }
+        main h3 {
+            font-size: 32px;
+            color: #ff4444;
+            text-shadow: 3px 3px 5px black;
+        }
+
         footer {
             display: flex;
             justify-content: space-between;
             padding: 20px 40px;
             font-size: 18px;
+            background: #111;
+            color: #ccc;
+        }
+        footer a {
+            color: #ff4444;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: #f00;
+            text-decoration: underline;
         }
     </style>
+    <!-- 引入恐怖字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>小诗一首</h1>
-        <h2>这是这简单单的没有过多的意思</h2>
+        <h1>人生的疑问</h1>
+        <h2>你是否准备好面对真相？</h2>
     </header>
     <main>
-        <h3>《远山夜思》</h3>
+        <h3>思考人生</h3>
         <p>
-            山川寂静云深远，星辰高挂夜色寒。<br>
-            风吹翠竹影摇乱，月下独行思无端。<br>
-            灯火阑珊人不见，梦里归乡路漫漫。<br>
-            多少过往成云烟，初心依旧未曾变。<br>
-            江水东流春复秋，雁归时节几人留。<br>
-            独倚窗前听雨落，半卷诗书诉心愁。<br>
-            遥望天边明月照，心随帆影入远舟。<br>
+            我们从何而来，又将归于何处？<br>
+            是否每一个抉择都在推动命运的齿轮？<br>
+            夜深人静时，你是否曾听到内心的低语？<br>
+            时间无情流逝，留给我们的意义是什么？<br>
+            我们的存在，是否只是一场宇宙的玩笑？<br>
+            你凝视深渊时，深渊是否也在回望着你？<br>
+            人生的终点，究竟是一片虚无，还是新的开始？<br>
+            或许，答案从未存在，我们只是追逐幻影的旅人……<br>
         </p>
     </main>
     <footer>
-        <span><a href="https://space.bilibili.com/1850927204?spm_id_from=333.1007.0.0">我的B站主页</a></span>
+        <span><a href="https://zhfjzyhltydx.github.io/notreal/">？？？</a></span>
         <span>©2024 12</span>
     </footer>
 </body>
